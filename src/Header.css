@@ -1,0 +1,235 @@
+/* Web Styles (unchanged) */
+.header-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: white;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: auto;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Header with transparent background */
+.header-container.transparent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: transparent; /* Start with transparent background */
+  box-shadow: none; /* No shadow initially */
+  transition: background-color 0.5s ease, box-shadow 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+/* Text color for the header */
+/* Default text color for all pages */
+.header-container,
+.header-container a,
+.header-logo-text h1,
+.header-logo-text p {
+  color: #034e7b;
+  transition: color 0.3s ease;
+}
+
+/* Text color when scrolled on the home page */
+.header-container.scrolled .header-logo-text h1,
+.header-container.scrolled .header-logo-text p,
+.header-container.scrolled .nav-link {
+  color: #034e7b;
+}
+
+/* Transparent header text color on the home page */
+.header-container.transparent .header-logo-text h1,
+.header-container.transparent .header-logo-text p,
+.header-container.transparent .nav-link {
+  color: white;
+}
+
+.header-logo-text {
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.header-logo-text h1,
+.header-logo-text p {
+  color: #034e7b;
+  text-align: left;
+  margin: 0;
+}
+
+.header-logo-text h1 {
+  font-size: 1.3rem;
+}
+
+.header-logo-text p {
+  font-size: 0.8rem;
+}
+
+.header-logo-text img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.header-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #f16723;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  color: #034e7b;
+  text-decoration: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: #f16723;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.services-menu-container {
+  padding: 5px 15px;
+}
+
+.menu-column {
+  flex: 1;
+  padding: 10px;
+}
+
+.menu-column .nav-link-heading {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #034e7b;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu-column a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Web Styles */
+.services-menu-container:hover .services-menu {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.services-menu {
+  display: none;
+  position: absolute;
+  top: 80%;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 1001;
+  flex-direction: row;
+  gap: 10px;
+  width: 1000px;
+  box-sizing: border-box;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header-link p {
+    display: none;
+  }
+  .hamburger-menu {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: none;
+    position: fixed; /* Ensures it sticks to the screen */
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: white; /* Background color of the menu */
+    z-index: 1001;
+    flex-direction: column;
+    max-height: calc(100vh - 60px); /* Takes up the screen below the header */
+    overflow-y: auto; /* Enables scrolling */
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    align-items: center;
+  }
+
+  .nav-menu.open {
+    display: flex;
+    opacity: 1;
+  }
+
+  .nav-menu .nav-link {
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    /* border-bottom: 1px solid #b9b9b9; */
+  }
+
+  .nav-menu .nav-link:hover {
+    background-color: #f16723; /* Optional: Highlight color on hover */
+  }
+  .menu-column {
+    display: none;
+  }
+  .header-container,
+  .header-container a,
+  .header-logo-text h1,
+  .header-logo-text p {
+    color: #034e7b;
+    transition: color 0.3s ease;
+  }
+
+  /* Text color when scrolled on the home page */
+  .header-container.scrolled .header-logo-text h1,
+  .header-container.scrolled .header-logo-text p,
+  .header-container.scrolled .nav-link {
+    color: #034e7b;
+  }
+
+  /* Transparent header text color on the home page */
+  .header-container.transparent .header-logo-text h1,
+  .header-container.transparent .header-logo-text p {
+    color: white;
+  }
+  .header-container.transparent .nav-link {
+    color: #034e7b;
+  }
+}

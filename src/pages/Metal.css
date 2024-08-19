@@ -1,0 +1,149 @@
+.metal-container {
+  /* background-image: url("../assets/hhholographic.png"); */
+  width: auto;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #000; /* Add bottom border */
+}
+
+.tab {
+  padding: 15px 30px;
+  background-color: #e6e3e3; /* Light gray background */
+  color: #000;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-right: 1px solid #c9c9c9; /* Light border between tabs */
+}
+
+.tab:last-child {
+  border-right: none; /* Remove border from the last tab */
+}
+
+.tab.active {
+  background-color: #fff; /* White background for the active tab */
+  border-top: 2px solid #000; /* Black border on top */
+  font-weight: bold; /* Bold text for the active tab */
+  border-bottom: none; /* Remove bottom border */
+}
+
+.tab:hover {
+  background-color: #e9e9e9; /* Slightly darker gray on hover */
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-section h2 {
+  margin-top: 0;
+  color: #034e7b;
+}
+
+.content-section p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.materials-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.materials-table th,
+.materials-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.materials-table th {
+  background-color: #034e7b;
+  color: white;
+}
+
+.materials-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.metal-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.metal-heading {
+  margin: 0 auto 20px auto; /* Center the heading and add margin below */
+  color: #034e7b;
+  font-size: 2rem; /* Adjust the size as needed */
+  font-weight: bold;
+  /* text-align: center; */
+}
+/* General Styles for Mobile */
+@media (max-width: 768px) {
+  .tabs-container {
+    flex-direction: column; /* Stack tabs vertically on mobile */
+    align-items: center;
+  }
+
+  .tab {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    width: 100%; /* Make tabs full-width */
+    border-right: none; /* Remove the right border */
+    border-bottom: 1px solid #c9c9c9; /* Add bottom border for each tab */
+  }
+
+  .tab.active {
+    border-bottom: none; /* Remove bottom border for the active tab */
+  }
+
+  .metal-heading {
+    font-size: 1.5rem; /* Adjust font size */
+    text-align: center; /* Center text on small screens */
+    line-height: 1.2; /* Adjust line height for better readability */
+    word-wrap: break-word; /* Break words if they are too long */
+  }
+
+  .content-container {
+    gap: 10px; /* Reduce gap between sections */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .content-section {
+    padding: 15px; /* Reduce padding for content sections */
+  }
+
+  .materials-table {
+    display: block; /* Change to block for scrolling */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping of table content */
+  }
+
+  .materials-table th,
+  .materials-table td {
+    padding: 8px; /* Reduce padding for table cells */
+  }
+
+  .materials-table th {
+    font-size: 0.9rem; /* Adjust font size */
+  }
+}

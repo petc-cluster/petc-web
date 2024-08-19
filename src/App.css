@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+/* Ensures the body and html take up the full viewport height */
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main container to push footer down */
+.app-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh; /* Full viewport height */
 }
 
-.App-link {
-  color: #61dafb;
+/* Main content area, which will grow and push the footer down */
+.main-content {
+  flex: 1; /* Fills available space */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color: #034e7b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
 }
+
+.contact {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+  /* Add any additional styling you need */
+}
+/* .contact:hover {
+  position: fixed;
+  bottom: 50px;
+  left: 100px;
+  z-index: 1000;
+} */

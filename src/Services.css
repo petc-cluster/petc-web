@@ -1,0 +1,177 @@
+/* Base styles */
+.services-container {
+  width: auto;
+  margin: 0 auto;
+  text-align: center;
+  /* background-image: url("./assets/aaabstract-min.png"); */
+  width: auto;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #ffffff;
+  background-image: radial-gradient(rgba(12, 12, 12, 0.171) 2px, transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+  background-size: fill;
+  background-position: center;
+  padding: 40px;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #034e7b;
+  font-family: "Roboto", sans-serif;
+  font-size: 2.5rem;
+}
+
+/* Tiles Section */
+.tiles-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.tile {
+  position: relative;
+  width: 200px;
+  height: 500px; /* Adjust height as needed */
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  opacity: 1; /* Translucent effect */
+}
+
+.tile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black transparent layer */
+  border-radius: 10px; /* Match border-radius of the tile */
+  z-index: 1; /* Place layer above the tile background */
+  transition: opacity 0.3s ease;
+  opacity: 0.8; /* Initial opacity of the layer */
+}
+
+.tile:hover::before {
+  opacity: 0;
+}
+
+.tile-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%) rotate(-90deg);
+  transform-origin: left center;
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  z-index: 2; /* Place text above the black transparent layer */
+}
+
+/* Service Sections */
+.service-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.service-section:hover {
+  transform: scale(1.02);
+}
+
+.service-section:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.service-text {
+  flex: 1;
+  padding: 0 30px;
+  text-align: left;
+}
+
+.service-text h2 {
+  margin-bottom: 15px;
+  color: #034e7b;
+  font-family: "Roboto", sans-serif;
+}
+
+.service-text p {
+  margin-bottom: 25px;
+  color: #555;
+}
+
+.learn-more {
+  padding: 12px 25px;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.service-image {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #034e7b;
+  margin: 30px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  /* Hide tiles on mobile */
+  .tiles-container {
+    display: none !important; /* Force hiding the tiles */
+  }
+
+  /* Adjust service sections for mobile */
+  .service-section {
+    flex-direction: column;
+  }
+
+  .service-section:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .service-text {
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .service-image {
+    margin: 20px 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
