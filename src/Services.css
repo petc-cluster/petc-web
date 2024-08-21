@@ -35,7 +35,7 @@ h1 {
 .tile {
   position: relative;
   width: 200px;
-  height: 500px; /* Adjust height as needed */
+  height: 100px; /* Adjust height as needed */
   background-size: cover;
   background-position: center;
   border-radius: 10px;
@@ -65,7 +65,7 @@ h1 {
 
 .tile-text {
   position: absolute;
-  top: 50%;
+  top: 100% !important;
   left: 10%;
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
@@ -127,8 +127,9 @@ h1 {
 
 .service-image {
   flex: 1;
+  object-fit: contain;
   max-width: 100%;
-  height: auto;
+  height: 90%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

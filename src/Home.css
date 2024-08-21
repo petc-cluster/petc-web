@@ -967,12 +967,12 @@ body {
 .service-inputs {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   border-radius: 4px;
   background-color: #eee;
   box-sizing: border-box;
   padding: 0.25rem;
-  width: 340px;
+  width: auto;
   font-size: 14px;
   height: 46px;
   margin-bottom: 25px;

@@ -118,30 +118,38 @@ const Header = () => {
               </Link>
               <div className="dropdown-content">
                 <Link
-                  to="/services/additive-manufacturing/metal-3d-printing"
+                  // to="/services/additive-manufacturing/metal-3d-printing"
+                  to={"/services/additive-manufacturing"}
                   onClick={handleLinkClick}
                 >
                   Metal 3D Printing
                 </Link>
                 <Link
-                  to="/services/polymer-3d-printing"
+                  // to="/services/polymer-3d-printing"
+                  to={"/services/additive-manufacturing"}
                   onClick={handleLinkClick}
                 >
                   Polymer 3D Printing
                 </Link>
                 <Link
-                  to="/services/msla-stereolithography"
+                  // to="/services/msla-stereolithography"
+                  to={"/services/additive-manufacturing"}
                   onClick={handleLinkClick}
                 >
                   MSLA Stereolithography
                 </Link>
                 <Link
-                  to="/services/fused-deposition-modeling"
+                  // to="/services/fused-deposition-modeling"
+                  to={"/services/additive-manufacturing"}
                   onClick={handleLinkClick}
                 >
                   Fused Deposition Modeling
                 </Link>
-                <Link to="/services/desktop-sls" onClick={handleLinkClick}>
+                <Link
+                  // to="/services/desktop-sls"
+                  to={"/services/additive-manufacturing"}
+                  onClick={handleLinkClick}
+                >
                   Desktop SLS
                 </Link>
               </div>
@@ -155,7 +163,10 @@ const Header = () => {
                 Metrology Inspection
               </Link>
               <div className="dropdown-content">
-                <Link to="/services/3d-scanner" onClick={handleLinkClick}>
+                <Link
+                  to="/services/metrology-inspection/3d-scanning"
+                  onClick={handleLinkClick}
+                >
                   3D Scanner
                 </Link>
                 {/* <Link to="/services/cmm" onClick={handleLinkClick}>
@@ -186,7 +197,7 @@ const Header = () => {
                 </Link>
               </div>
             </div>
-            <div className="menu-column">
+            {/* <div className="menu-column">
               <Link
                 to="/services/testing"
                 className="nav-link-heading"
@@ -202,8 +213,8 @@ const Header = () => {
                   CNC Turning
                 </Link>
               </div>
-            </div>
-            <div className="menu-column">
+            </div> */}
+            {/* <div className="menu-column">
               <Link
                 to="/services/training"
                 className="nav-link-heading"
@@ -228,7 +239,7 @@ const Header = () => {
                   3D Scanning
                 </Link>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <Link to="/about-us" className="nav-link" onClick={handleLinkClick}>

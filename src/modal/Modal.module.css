@@ -21,6 +21,7 @@
   position: relative;
   width: 90%;
   max-width: 600px;
+  padding-right: calc(40px - 5px);
   height: 80vh; /* Fixed height */
   overflow-y: auto; /* Enable vertical scrolling */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -42,7 +43,10 @@
 
 /* Custom Scrollbar */
 .modal_content::-webkit-scrollbar {
-  width: 8px; /* Slim scrollbar width */
+  width: 5px; /* Slim scrollbar width */
+}
+.modal_content::-webkit-scrollbar-button {
+  border-radius: 8px;
 }
 
 .modal_content::-webkit-scrollbar-thumb {
