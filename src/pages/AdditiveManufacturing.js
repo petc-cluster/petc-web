@@ -72,15 +72,23 @@ function AdditiveManufacturing() {
         <div className="service-text">
           <h2>Metal 3D Printing</h2>
           <p>
-            Description for Metal DMLS. This section provides details about the
-            Metal Direct Metal Laser Sintering process.
+            Metal 3D printing, also known as metal additive manufacturing, is a
+            process that creates metal parts by layering powdered metal material
+            and fusing it with a heat source, such as a laser or electron beam.
+            This technology allows for the production of complex, high-strength
+            metal components with intricate geometries that would be difficult
+            or impossible to achieve with traditional manufacturing methods.
+            Used in industries like aerospace, automotive, and medical, metal 3D
+            printing offers the benefits of reduced material waste, faster
+            prototyping, and the ability to create custom, lightweight parts
+            with superior mechanical properties.
           </p>
-          <Link
+          {/* <Link
             to="/services/additive-manufacturing/metal-3d-printing"
             className="learn-more"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
       {/* <div className="line"></div> */}
@@ -94,12 +102,20 @@ function AdditiveManufacturing() {
         <div className="service-text">
           <h2>Polymer 3D Printing</h2>
           <p>
-            Description for Polymer FDM, SLS, MSLA. This section provides
-            details about various polymer additive manufacturing processes.
+            Polymer 3D printing is a process that creates objects by depositing
+            layers of polymer material, such as plastic, based on a digital
+            design. This additive manufacturing method is widely used for
+            producing prototypes, functional parts, and custom products with
+            complex geometries. Polymer 3D printing offers flexibility in
+            design, quick turnaround times, and cost-effective production,
+            making it popular in industries like consumer goods, healthcare, and
+            automotive. It allows for the creation of lightweight, durable parts
+            with various mechanical properties, depending on the type of polymer
+            used.
           </p>
-          <Link to="/services/polymer" className="learn-more">
+          {/* <Link to="/services/polymer" className="learn-more">
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -119,12 +135,12 @@ function AdditiveManufacturing() {
             performance and price. As MSLA does not rely on a moving laser, it
             reduces mechanical wear and can be more reliable over time.
           </p>
-          <Link
+          {/* <Link
             to="/services/additive-manufacturing/metal-dmls"
             className="learn-more"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -144,12 +160,12 @@ function AdditiveManufacturing() {
             manner, solidifying almost immediately after extrusion to form a
             precise 3D object.
           </p>
-          <Link
+          {/* <Link
             to="/services/additive-manufacturing/metal-dmls"
             className="learn-more"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
 
@@ -167,12 +183,12 @@ function AdditiveManufacturing() {
             applications. The process does not require support structures,
             allowing for the production of interlocking or movable parts.
           </p>
-          <Link
+          {/* <Link
             to="/services/additive-manufacturing/metal-dmls"
             className="learn-more"
           >
             Learn More
-          </Link>
+          </Link> */}
         </div>
       </div>
 

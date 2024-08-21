@@ -17,9 +17,17 @@ const Modal = ({ isOpen, onClose, children }) => {
 
   if (!isOpen) return null;
 
+  const handleBackgroundClick = () => {
+    onClose(); // Close the modal when background is clicked
+  };
+
+  const handleContentClick = (e) => {
+    e.stopPropagation(); // Prevent closing when clicking inside the modal content
+  };
+
   return (
-    <div className={style.modal_overlay}>
-      <div className={style.modal_content}>
+    <div className={style.modal_overlay} onClick={handleBackgroundClick}>
+      <div className={style.modal_content} onClick={handleContentClick}>
         <IconButton
           onClick={onClose}
           style={{

@@ -284,3 +284,15 @@ h1 {
   background-color: #034e7b;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .services_section {
+    display: none;
+  }
+  .service_section:nth-child(even) {
+    flex-direction: column;
+  }
+  .service_section {
+    flex-direction: column;
+  }
+}

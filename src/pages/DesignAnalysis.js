@@ -40,7 +40,7 @@ function DesignAnalysis() {
           <div className={styles.service_list}>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(dfamRef)}
+              // onClick={() => scrollToSection(dfamRef)}
             >
               <h3>Design for Additive Manufacturing</h3>
               <h3>(DFAM)</h3>
@@ -51,7 +51,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(doeRef)}
+              // onClick={() => scrollToSection(doeRef)}
             >
               <h3>Data Optimization (DOE)</h3>
               <p>
@@ -61,7 +61,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(topologyRef)}
+              // onClick={() => scrollToSection(topologyRef)}
             >
               <h3>Topology Optimization</h3>
               <p>
@@ -71,7 +71,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(asstes3dRef)}
+              // onClick={() => scrollToSection(asstes3dRef)}
             >
               <h3>3D Assets</h3>
               <p>
@@ -81,7 +81,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(camRef)}
+              // onClick={() => scrollToSection(camRef)}
             >
               <h3>Computer Aided Manufacturing(CAM)</h3>
               <p>
@@ -91,7 +91,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(moldFlowRef)}
+              // onClick={() => scrollToSection(moldFlowRef)}
             >
               <h3>Mold Flow Analysis</h3>
               <p>
@@ -101,7 +101,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(moldDesignRef)}
+              // onClick={() => scrollToSection(moldDesignRef)}
             >
               <h3>Mold Design</h3>
               <p>Optimizing the structural design</p>
@@ -110,7 +110,7 @@ function DesignAnalysis() {
             </div>
             <div
               className={styles.service_item}
-              onClick={() => scrollToSection(simulationRef)}
+              // onClick={() => scrollToSection(simulationRef)}
             >
               <h3>Simulation of Product</h3>
               <p>
@@ -162,7 +162,7 @@ function DesignAnalysis() {
       </div> */}
 
       {/* Service Sections */}
-      <div className={styles.service_section} ref={dfamRef}>
+      {/* <div className={styles.service_section} ref={dfamRef}>
         <img
           src="https://via.placeholder.com/300"
           alt="Analysis Techniques"
@@ -343,7 +343,7 @@ function DesignAnalysis() {
             Learn More
           </Link>
         </div>
-      </div>
+      </div> */}
 
       {/* Back to Services Link */}
       <div className={styles.back_to_services}>
