@@ -369,7 +369,7 @@ function Home() {
               </Link>
             </div>
             <div className="service-item">
-              <Link to="/services/additive-manufacturing">
+              <Link to="/services/design">
                 <h3>Manufacturing (3D Printing)</h3>
                 <p>
                   Utilizing state-of-the-art 3D printing technologies to create
@@ -378,9 +378,7 @@ function Home() {
               </Link>
             </div>
             <div className="service-item">
-              <Link
-              // to="/services/testing"
-              >
+              <Link to="/services/testing">
                 <h3>Data Optimization</h3>
                 <p>
                   Ensuring that data is optimized for efficient processing and
@@ -389,9 +387,7 @@ function Home() {
               </Link>
             </div>
             <div className="service-item">
-              <Link
-              // to="/services/process-selection"
-              >
+              <Link to="/services/process-selection">
                 <h3>Process Selection</h3>
                 <p>
                   Helping you choose the best manufacturing process for your
@@ -400,9 +396,7 @@ function Home() {
               </Link>
             </div>
             <div className="service-item">
-              <Link
-              // to="/services/material-selection"
-              >
+              <Link to="/services/material-selection">
                 <h3>Material Selection</h3>
                 <p>
                   Offering expert advice on selecting the right materials for
@@ -411,9 +405,7 @@ function Home() {
               </Link>
             </div>
             <div className="service-item">
-              <Link
-              // to="/services/topology"
-              >
+              <Link to="/services/topology">
                 <h3>Topology Optimization</h3>
                 <p>Optimizing the structural design to</p>
                 <p>achieve the best performance and</p>
@@ -436,7 +428,7 @@ function Home() {
               className="service-image-mob"
             />
             <h3>Additive Manufacturing</h3>
-            <p>Description of Service 1.</p>
+            {/* <p>Description of Service 1.</p> */}
             <Link
               to="/services/additive-manufacturing"
               className="service-link-mob"
@@ -451,7 +443,7 @@ function Home() {
               className="service-image-mob"
             />
             <h3>Metrology Inspection</h3>
-            <p>Description of Service 2.</p>
+            {/* <p>Description of Service 2.</p> */}
             <Link
               to="/services/metrology-inspection"
               className="service-link-mob"
@@ -466,12 +458,12 @@ function Home() {
               className="service-image-mob"
             />
             <h3>Design Analysis</h3>
-            <p>Description of Service 3.</p>
-            <Link to="/services/design-analysis" className="service-link-mob">
+            {/* <p>Description of Service 3.</p> */}
+            <Link to="/services/services" className="service-link-mob">
               Learn More
             </Link>
           </div>
-          <div className="service-item-mob">
+          {/* <div className="service-item-mob">
             <img
               src={service3Image}
               alt="Service 3"
@@ -494,7 +486,7 @@ function Home() {
             <Link to="/services/training" className="service-link-mob">
               Learn More
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -814,19 +806,10 @@ function Home() {
                 <input
                   type="radio"
                   name="radio"
-                  checked={selectedOption === "3D scanning"}
+                  checked={selectedOption === "3D Printing"}
                   onChange={handleOptionChange}
                 />
-                <span className="name">3D scanning</span>
-              </label>
-              <label className="radio">
-                <input
-                  type="radio"
-                  name="radio"
-                  checked={selectedOption === "Design"}
-                  onChange={handleOptionChange}
-                />
-                <span className="name">Design</span>
+                <span className="name">3D Printing</span>
               </label>
             </div>
 
