@@ -663,6 +663,9 @@ body {
   border: 1px solid #e0e0e0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+.why-item:hover {
+  box-shadow: 0 0 10px #f16723;
+}
 
 .why-item h3 {
   margin-top: 10px;
@@ -714,6 +717,9 @@ body {
   box-shadow: 0 0 3px #f16723;
   border: 1px solid #e0e0e0;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.how-item:hover {
+  box-shadow: 0 0 10px #f16723;
 }
 
 .how-item h3 {
