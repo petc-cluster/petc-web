@@ -4,7 +4,7 @@ import "../pages/AdditiveManufacturing.css"; // Add your custom styles for this 
 import metal3dPrinting from "../assets/am/metal-3d-printing.jpg";
 import polymer3dPrinting from "../assets/am/polymer-3d-printing.jpg";
 import MSLA from "../assets/am/MSLA-Stereolithography.jpg";
-import fusedDepositionModeling from "../assets/am/Fused-Deposition-Modeling.webp";
+import fusedDepositionModeling from "../assets/am/Fused-Deposition-Modeling.jpg";
 import desktopSLS from "../assets/am/Desktop-SLS.png";
 
 function AdditiveManufacturing() {
@@ -147,7 +147,7 @@ function AdditiveManufacturing() {
       <div className="service-section" ref={fusedRef}>
         <img
           src={fusedDepositionModeling}
-          alt="Metal DMLS"
+          alt="FDM"
           className="service-image"
         />
         <div className="service-text">

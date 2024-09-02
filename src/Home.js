@@ -302,7 +302,8 @@ function Home() {
             </div>
           </div> */}
         </div>
-        <div className="container">
+        {/* cube */}
+        {/* <div className="container">
           <div className="cube">
             <div style={{ "--x": -1, "--y": 0 }}>
               <span style={{ "--i": 3 }}></span>
@@ -356,7 +357,7 @@ function Home() {
               <span style={{ "--i": 1 }}></span>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
 
       {/* Services Section */}
