@@ -72,6 +72,16 @@ const Footer = () => {
             </div>
           </div>
         </div>
+        <iframe
+          // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.092557949394!2d144.96328031571953!3d-37.8161780797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5776b13d9bd7e44!2s1234%20Venture%20Road%2C%20Innovation%20City%2C%20XYZ%2056789!5e0!3m2!1sen!2sus!4v1630988675669!5m2!1sen!2sus"
+          src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=12.969741940314842, 80.09395254920679&amp;q=Precision%20Engineering%20Technology%20center,%20PETC%2C%20Thirumudivakam%2C%20Tamil%20Nadu&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+          width="50%"
+          height="250"
+          allowFullScreen=""
+          loading="lazy"
+          title="Google Maps Location"
+          className="map"
+        ></iframe>
       </div>
 
       {/* Uncomment and use the following when needed */}
