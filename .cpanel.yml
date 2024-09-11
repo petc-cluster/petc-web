@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home1/petechcentre/repositories/petc-web/
+    - export DEPLOYPATH=/home1/petechcentre/repositories/petc-web/public/index.html
     - /bin/cp * $DEPLOYPATH
