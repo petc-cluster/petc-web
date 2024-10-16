@@ -2,10 +2,10 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowBackIos, ArrowForwardIos, Close } from "@mui/icons-material";
 import "./Home.css";
-import coverImage from "./assets/home-cover.jpg";
-import service1Image from "./assets/home-cover.jpg";
-import service2Image from "./assets/home-cover.jpg";
-import service3Image from "./assets/home-cover.jpg";
+// import coverImage from "./assets/home-cover.jpg";
+import service1Image from "./assets/services/am.jpg";
+import service2Image from "./assets/services/Metrology-Inspection.jpg";
+import service3Image from "./assets/home-cover1.jpg";
 import galleryImages from "./assets/galleryImages";
 import rd from "./assets/vectors/R&D.png";
 import msme from "./assets/vectors/msme.png";
@@ -54,10 +54,10 @@ function Home() {
     });
   };
 
-  const handleFileUpload = (event) => {
-    const file = event.target.files[0];
-    setQuoteData({ ...quoteData, file });
-  };
+  // const handleFileUpload = (event) => {
+  //   const file = event.target.files[0];
+  //   setQuoteData({ ...quoteData, file });
+  // };
 
   // Modal open and close handlers
   const openModal = () => {

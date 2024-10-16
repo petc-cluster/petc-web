@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 import PETC_logo from "./assets/PETC_logo.png";
+import tn_logo from "./assets/TamilNadu_Logo.png";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -74,7 +75,16 @@ const Header = () => {
       <div className="header-logo-text">
         <Link to="/" className="header-link">
           <img
+            // src={PETC_logo}
+            src={tn_logo}
+            alt="Logo"
+            style={{ height: "60px", marginRight: "15px" }}
+          />
+        </Link>
+        <Link to="/" className="header-link">
+          <img
             src={PETC_logo}
+            // src={tn_logo}
             alt="Logo"
             style={{ height: "50px", marginRight: "15px" }}
           />

@@ -166,6 +166,9 @@ nav {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .header-link h1 {
+    font-size: medium;
+  }
   .header-link p {
     display: none;
   }
